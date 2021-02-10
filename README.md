@@ -2,6 +2,8 @@
 
 This project targets to scrape a google results page & links farmed on it. It opens the link to new window & with help of algo you can see the list of libraries used on web page. This is an attempt to Technical round, and is only for sole purpose.
 
+![Web Crawler Demo](Web_crawler.gif)
+
 ## RUN json Server
 npx json-server --watch db.json --port 3002
 
@@ -12,8 +14,17 @@ In the project directory, you can run:
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Step 0: fetch teh searched Term
+### Step 0: Read a string (search term) from a URL parameter
 Although the app has machenism to get Keyword inputted from User and return response. But to fetch searched keyword from URL i have created this algorithm :
+
+function getParameterByUrl(name,url) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(url);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+alert(getParameterByUrl('q',window.location.href));
 
 
 ### Step 1 : RUN the app 
