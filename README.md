@@ -17,14 +17,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Step 0: Read a string (search term) from a URL parameter
 Although the app has machenism to get Keyword inputted from User and return response. But to fetch searched keyword from URL i have created this algorithm :
 
-function getParameterByUrl(name,url) {
-    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(url);
-    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
+        function getParameterByUrl(name,url) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(url);
+            return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
 
-alert(getParameterByUrl('q',window.location.href));
+        alert(getParameterByUrl('q',window.location.href));
 
 
 ### Step 1 : RUN the app 
