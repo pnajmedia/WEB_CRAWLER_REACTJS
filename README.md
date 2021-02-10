@@ -37,8 +37,8 @@ It takes a fixed keyword 'Best Places';
 It must take you to new the mainlink website.
 
 ### Step 3: Paste below Algorithm in mainlink website's Console. 
-### It Fetches the top libraries :  <Just RUN in console of Opened web page>
-###  document.querySelectorAll('cite') can be used for alternate coverage! 
+        ## It Fetches the top libraries :  <Just RUN in console of Opened web page>
+        ##  document.querySelectorAll('cite') can be used for alternate coverage! 
     let arr = document.scripts; 
     const res = [];
     const map = new Map();
