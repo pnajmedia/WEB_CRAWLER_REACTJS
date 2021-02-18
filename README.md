@@ -1,6 +1,6 @@
 # Web Crawler by Pardep Kumar
 
-This project targets to scrape a google results page & links farmed on it. It opens the link to new window & with help of algo you can see the list of libraries used on web page. This is an attempt to Technical round, and is only for sole purpose.
+This project targets to scrape a google results page & links farmed on it. It opens the link to new window & with help of algo you can see the list of libraries used on web page.
 
 ![Web Crawler Demo](Web_crawler.gif)
 
